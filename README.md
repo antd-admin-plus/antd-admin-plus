@@ -5,6 +5,8 @@
 </div>
 
 
+[![Build Production Assets](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml/badge.svg?branch=main)](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml)
+
 ## Features
 
 - :bulb: **JS**: Only JS.
