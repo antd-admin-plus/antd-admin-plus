@@ -1,9 +1,11 @@
 <h1 align="center">Antd Admin Plus</h1>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/2594920/157815020-f6b07262-2c8a-4757-8f8f-778091911f82.png" widht="768" height="384" />
+</div>
 
 <div align="center">
   An out of box UI solution for application start.
 </div>
-
 
 [![CI/CD](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml/badge.svg)](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml)
 ![License](https://img.shields.io/github/license/dyarleniber/react-workflow-gh-actions)
@@ -57,6 +59,23 @@ coming soon
   - Register
   - Register Result
 ```
+
+## Technology
+- [antd 4.19.1]
+- [react 17]
+- [react-dom]
+- [react-router]
+- [redux-toolkit](https://redux-toolkit.js.org/)
+- [lodash]
+- [eslint]
+- [prettier]
+- [esprettier]
+- [github actions]
+- [axios]
+- [dayjs]
+- [mock.js]
+- [less]
+- [scss]
 
 ## Usage
 
