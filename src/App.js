@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.less';
-import { Button } from 'antd';
+import { useRoutes } from "react-router-dom"
+import routes from "./router"
+// import { ConfigProvider } from 'antd';
+// ConfigProvider.config({
+//   theme: {
+//     primaryColor: 'green',
+//   },
+// });
 
 function App() {
+  const element = useRoutes(routes)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <Button type="primary">1111</Button>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {element}
     </div>
   );
 }
