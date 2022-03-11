@@ -1,10 +1,8 @@
 <h1 align="center">Antd Admin Plus</h1>
 
-<div>
+<div align="center">
   An out of box UI solution for application start.
 </div>
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 ## Features
