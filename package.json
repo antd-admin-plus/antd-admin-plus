@@ -2,7 +2,7 @@
   "name": "antd-admin-plus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://antd-admin-plus.github.io/",
+  "homepage": "https://antd-admin-plus.github.io/antd-admin-plus",
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@testing-library/jest-dom": "^5.16.2",
