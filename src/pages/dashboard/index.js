@@ -11,7 +11,7 @@ import {
 const { Header, Sider, Content } = Layout;
 
 export default function Dashboard() {
-  const [collapsed, toggle] = useState(false);
+  const [collapsed] = useState(false);
 
   return (
     <Layout className='App-layout'>
