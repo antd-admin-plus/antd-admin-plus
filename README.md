@@ -60,6 +60,23 @@ coming soon
   - Register Result
 ```
 
+## Technology
+- [antd 4.19.1]
+- [react 17]
+- [react-dom]
+- [react-router]
+- [redux-toolkit](https://redux-toolkit.js.org/)
+- [lodash]
+- [eslint]
+- [prettier]
+- [esprettier]
+- [github actions]
+- [axios]
+- [dayjs]
+- [mock.js]
+- [less]
+- [scss]
+
 ## Usage
 
 ### Use bash
