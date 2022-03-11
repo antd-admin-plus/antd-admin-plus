@@ -6,7 +6,6 @@
 
 
 [![CI/CD](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml/badge.svg)](https://github.com/antd-admin-plus/antd-admin-plus/actions/workflows/github-actions.yml)
-
 ![License](https://img.shields.io/github/license/dyarleniber/react-workflow-gh-actions)
 
 ## Features
@@ -21,7 +20,6 @@
 - :globe_with_meridians: **International**: Built-in i18n solution
 - :gear: **Best Practices**: Solid workflow to make your code healthy
 - :1234: **Mock development**: Easy to use mock development solution
-
 
 ## Templates
 
@@ -65,8 +63,10 @@ coming soon
 ### Use bash
 
 ```
+git clone git@github.com:antd-admin-plus/antd-admin-plus.git
 
 ```
+play by yourself.
 
 ## Development
 
