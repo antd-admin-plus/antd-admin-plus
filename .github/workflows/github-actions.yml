@@ -1,9 +1,9 @@
 name: Build Production Assets
 on: 
   push:
-    branches: [master]
+    branches: [main]
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   run_ci:
