@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import "./index.less";
@@ -73,7 +72,7 @@ export default function Login() {
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
-            <a className="login-form-forgot" href="">
+            <a className="login-form-forgot" href="#forget">
               Forgot password
             </a>
           </Form.Item>
