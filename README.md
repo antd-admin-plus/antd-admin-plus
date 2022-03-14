@@ -68,12 +68,12 @@ coming soon
 - [redux-toolkit](https://redux-toolkit.js.org/)
 - [lodash]
 - [eslint]
-- [prettier]
-- [esprettier]
+- [prettier](#https://prettier.io/docs/en/install.html)
 - [github actions]
 - [axios]
 - [dayjs]
 - [mock.js]
+- [tailwindcss]
 - [less]
 - [scss]
 
