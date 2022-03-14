@@ -4,7 +4,7 @@ import RequireAuth from "../pages/auth"
 
 const routes = [
   {
-    path: "/",
+    path: "/antd-admin-plus",
     element: <RequireAuth />,
     children: [
       {
