@@ -1,4 +1,8 @@
 /* CSS Variable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import '~antd/dist/antd.variable.min.css'; 
 
 html, body {
