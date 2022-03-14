@@ -6,6 +6,8 @@
         "no-unused-vars": 0
     },
     "parserOptions": {
+        "ecmaVersion": 7,
         "sourceType": "module"
-    }
+    },
+    "extends": ["react-app"]
 }
