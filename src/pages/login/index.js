@@ -17,6 +17,7 @@ export default function Login() {
     const { username, password } = values
     if (username === "admin" && password === "admin") {
       dispatch(saveUsername({ username }))
+      localStorage.setItem("username", username)
       navigate("/dashboard")
     } else {
       message.error('This is an error message');

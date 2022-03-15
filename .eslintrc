@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true
+        // "browser": true
     },
     "rules": {
         "no-unused-vars": 0

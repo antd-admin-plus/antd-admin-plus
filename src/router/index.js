@@ -36,12 +36,10 @@ const routes = [
         element: <State403 />,
       },
       {
-        index: true,
         path: "404",
         element: <State404 />,
       },
       {
-        index: true,
         path: "500",
         element: <State500 />,
       },
