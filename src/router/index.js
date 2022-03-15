@@ -1,5 +1,6 @@
 import Login from "@pages/login"
 import Dashboard from "@pages/dashboard"
+import Users from "@pages/users"
 import RequireAuth from "../pages/auth"
 
 // exception pages
@@ -17,10 +18,10 @@ const routes = [
         path: "/dashboard",
         element: <Dashboard />,
       },
-      // {
-      //   path: "/user",
-      //   element: <User/>,
-      // }
+      {
+        path: "/user",
+        element: <Users/>,
+      }
     ],
   },
   {

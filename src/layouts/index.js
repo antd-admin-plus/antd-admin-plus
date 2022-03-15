@@ -23,6 +23,7 @@ export default function BaseLayout({ children }) {
 
   const location = useLocation();
   const pathSnippets = location.pathname.split('/').filter(i => i);
+  
   const extraBreadcrumbItems = pathSnippets.map((_, index) => {
     const url = `/${pathSnippets.slice(0, index + 1).join('/')}`;
     return (
@@ -47,13 +48,13 @@ export default function BaseLayout({ children }) {
         </div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1" icon={<DashboardOutlined />}>
-            Dashboard
+            <Link to="/dashboard">Dashboard</Link>
           </Menu.Item>
           <Menu.Item key="2" icon={<UserOutlined />}>
-            Users
+            <Link to="/user">Users</Link>
           </Menu.Item>
           <Menu.Item key="3" icon={<LineChartOutlined />}>
-            Charts
+            <Link to="/charts">Charts</Link>
           </Menu.Item>
         </Menu>
       </Sider>
