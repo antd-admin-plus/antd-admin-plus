@@ -31,7 +31,7 @@ export default function BaseLayout({ children }) {
       </Breadcrumb.Item>
     );
   });
-  
+
   const breadcrumbItems = [
     <Breadcrumb.Item key="home">
       <DashboardOutlined />
