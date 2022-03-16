@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.650e3f91.css",
-    "main.js": "/static/js/main.4ad67561.js",
-    "static/js/27.3f2ff544.chunk.js": "/static/js/27.3f2ff544.chunk.js",
-    "index.html": "/index.html"
+    "main.css": "/antd-admin-plus/static/css/main.650e3f91.css",
+    "main.js": "/antd-admin-plus/static/js/main.f7a00202.js",
+    "static/js/27.3f2ff544.chunk.js": "/antd-admin-plus/static/js/27.3f2ff544.chunk.js",
+    "index.html": "/antd-admin-plus/index.html"
   },
   "entrypoints": [
     "static/css/main.650e3f91.css",
-    "static/js/main.4ad67561.js"
+    "static/js/main.f7a00202.js"
   ]
 }
