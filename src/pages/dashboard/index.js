@@ -5,9 +5,6 @@ import LineChart from "components/Charts/LineChart";
 
 export default function Dashboard() {
   return (
-    <BaseLayout>
-      
-      <LineChart></LineChart>
-    </BaseLayout>
+    <LineChart></LineChart>
   )
 }

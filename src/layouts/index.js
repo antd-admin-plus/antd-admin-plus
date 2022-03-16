@@ -46,14 +46,14 @@ export default function BaseLayout({ children }) {
         <div className="logo text-white font-semibold text-xl p-4">
           Admin Plus
         </div>
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-          <Menu.Item key="1" icon={<DashboardOutlined />}>
+        <Menu theme="dark" mode="inline" defaultSelectedKeys={[`${location.pathname}`]}>
+          <Menu.Item key="/dashboard" icon={<DashboardOutlined />}>
             <Link to="/dashboard">Dashboard</Link>
           </Menu.Item>
-          <Menu.Item key="2" icon={<UserOutlined />}>
-            <Link to="/user">Users</Link>
+          <Menu.Item key="/users" icon={<UserOutlined />}>
+            <Link to="/users">Users</Link>
           </Menu.Item>
-          <Menu.Item key="3" icon={<LineChartOutlined />}>
+          <Menu.Item key="/charts" icon={<LineChartOutlined />}>
             <Link to="/charts">Charts</Link>
           </Menu.Item>
         </Menu>
@@ -69,10 +69,6 @@ export default function BaseLayout({ children }) {
               onClick={() => toggleCollapsed(true)}
             ></MenuFoldOutlined>
           )}
-          {/* {React.createElement(, {
-              className: 'trigger',
-              onClick: toggle,
-            })} */}
         </Header>
         <Content
           className="site-layout-background"

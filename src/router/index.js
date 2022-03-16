@@ -15,11 +15,11 @@ const routes = [
     children: [
       {
         index: true,
-        path: "/dashboard",
+        path: "dashboard",
         element: <Dashboard />,
       },
       {
-        path: "/user",
+        path: "users",
         element: <Users/>,
       }
     ],
