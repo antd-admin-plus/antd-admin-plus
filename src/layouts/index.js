@@ -25,6 +25,7 @@ export default function BaseLayout({ children }) {
     "/exceptions/403": "403",
     "/exceptions/404": "404",
     "/exceptions/500": "500",
+    "/charts": "Charts",
   }
 
   const location = useLocation()
@@ -92,6 +93,7 @@ export default function BaseLayout({ children }) {
               onClick={() => toggleCollapsed(true)}
             ></MenuFoldOutlined>
           )}
+          <div class="text-white">11111</div>
         </Header>
         <Content
           className="site-layout-background"

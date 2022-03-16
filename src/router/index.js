@@ -40,6 +40,9 @@ const routes = [
           },
         ],
       },
+      {
+        path: "charts",
+      }
     ],
   },
   {
