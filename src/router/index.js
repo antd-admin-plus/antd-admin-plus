@@ -21,30 +21,30 @@ const routes = [
       {
         path: "users",
         element: <Users/>,
-      }
+      },
+      {
+        path: "exceptions",
+        children: [
+          {
+            index: true,
+            path: "403",
+            element: <State403 />,
+          },
+          {
+            path: "404",
+            element: <State404 />,
+          },
+          {
+            path: "500",
+            element: <State500 />,
+          },
+        ],
+      },
     ],
   },
   {
     path: "/login",
     element: <Login />,
-  },
-  {
-    path: "/exceptions",
-    children: [
-      {
-        index: true,
-        path: "403",
-        element: <State403 />,
-      },
-      {
-        path: "404",
-        element: <State404 />,
-      },
-      {
-        path: "500",
-        element: <State500 />,
-      },
-    ],
   },
 ]
 
