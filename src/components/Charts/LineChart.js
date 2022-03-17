@@ -18,7 +18,7 @@
     const config = {
       data,
       width: 800,
-      height: 100,
+      height: 300,
       autoFit: false,
       xField: 'year',
       yField: 'value',

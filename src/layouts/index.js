@@ -1,53 +1,19 @@
 import { useState } from "react"
-import { Link, useLocation } from "react-router-dom"
-import { Layout, Menu, Breadcrumb } from "antd"
+import { Layout } from "antd"
 import "./index.less"
 
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
-  UserOutlined,
-  AlertOutlined,
-  DashboardOutlined,
-  LineChartOutlined,
 } from "@ant-design/icons"
 
+import MenuSider from "./components/Sider"
+import BreadcrumbNav from "./components/Breadcrumb"
+
 const { Header, Sider, Content, Footer } = Layout
-const { SubMenu } = Menu
 
 export default function BaseLayout({ children }) {
   const [collapsed, toggleCollapsed] = useState(false)
-
-  const breadcrumbNameMap = {
-    "/dashboard": "Dashboard",
-    "/users": "User",
-    "/exceptions": "Exceptions",
-    "/exceptions/403": "403",
-    "/exceptions/404": "404",
-    "/exceptions/500": "500",
-    "/charts": "Charts",
-  }
-
-  const location = useLocation()
-  const pathSnippets = location.pathname.split("/").filter((i) => i)
-
-  console.log(pathSnippets)
-
-  const extraBreadcrumbItems = pathSnippets.map((_, index) => {
-    const url = `/${pathSnippets.slice(0, index + 1).join("/")}`
-    return (
-      <Breadcrumb.Item key={url}>
-        <Link to={url}>{breadcrumbNameMap[url]}</Link>
-      </Breadcrumb.Item>
-    )
-  })
-
-  const breadcrumbItems = [
-    <Breadcrumb.Item key="home">
-      <DashboardOutlined />
-      <Link to="/dashboard">Dashboard</Link>
-    </Breadcrumb.Item>,
-  ].concat(extraBreadcrumbItems)
 
   return (
     <Layout className="layout">
@@ -55,32 +21,7 @@ export default function BaseLayout({ children }) {
         <div className="logo text-white font-semibold text-xl p-4">
           Admin Plus
         </div>
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={[`${location.pathname}`]}
-        >
-          <Menu.Item key="/dashboard" icon={<DashboardOutlined />}>
-            <Link to="/dashboard">Dashboard</Link>
-          </Menu.Item>
-          <Menu.Item key="/users" icon={<UserOutlined />}>
-            <Link to="/users">Users</Link>
-          </Menu.Item>
-          <SubMenu key="/exceptions" icon={<AlertOutlined />} title="Exceptions">
-            <Menu.Item key="3">
-              <Link to="/exceptions/403">403</Link>
-            </Menu.Item>
-            <Menu.Item key="4">
-              <Link to="/exceptions/404">404</Link>
-            </Menu.Item>
-            <Menu.Item key="5">
-              <Link to="/exceptions/500">500</Link>
-            </Menu.Item>
-          </SubMenu>
-          <Menu.Item key="/charts" icon={<LineChartOutlined />}>
-            <Link to="/charts">Charts</Link>
-          </Menu.Item>
-        </Menu>
+        <MenuSider></MenuSider>
       </Sider>
       <Layout className="site-layout">
         <Header className="layout-header">
@@ -96,17 +37,9 @@ export default function BaseLayout({ children }) {
           <div class="text-white">11111</div>
         </Header>
         <Content
-          className="site-layout-background"
-          style={{
-            margin: "14px 16px",
-            padding: 14,
-            minHeight: 280,
-          }}
+          className="layout-background"
         >
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            {breadcrumbItems}
-          </Breadcrumb>
-
+          <BreadcrumbNav />
           <div style={{ backgroundColor: "#fff", padding: 24, minHeight: 380 }}>
             {children}
           </div>
