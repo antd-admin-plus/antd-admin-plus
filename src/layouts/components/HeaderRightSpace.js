@@ -1,5 +1,5 @@
 import React from "react"
-import { Popover, Menu, Avatar } from "antd"
+import { Menu, Avatar } from "antd"
 
 import avatar from '@/logo.png'
 
@@ -15,6 +15,7 @@ export default function HeaderRightSpace() {
   return (
     <Menu key="user" mode="horizontal" theme="dark">
         <SubMenu
+          key="children"
           title={
             <>
               <span style={{ color: '#999', marginRight: 4 }}>

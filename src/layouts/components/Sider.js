@@ -1,4 +1,4 @@
-import React from "react"
+import { useEffect, useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu } from "antd"
 
@@ -13,13 +13,20 @@ const { SubMenu } = Menu
 
 export default function Sider() {
   const location = useLocation()
+  const [defaultSelectedKey, setDefaultSelectedKeys] = useState('/dashboard')
+
+  useEffect(() => {
+    console.log(location.pathname)
+    setDefaultSelectedKeys(location.pathname)
+  }, [location.pathname])
 
   return (
     <>
       <Menu
         theme="dark"
         mode="inline"
-        defaultSelectedKeys={[`${location.pathname}`]}
+        defaultSelectedKeys={[`${defaultSelectedKey}`]}
+        selectedKeys={[`${defaultSelectedKey}`]}
       >
         <Menu.Item key="/dashboard" icon={<DashboardOutlined />}>
           <Link to="/dashboard">Dashboard</Link>
