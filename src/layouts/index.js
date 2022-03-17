@@ -7,6 +7,7 @@ import {
   MenuFoldOutlined,
 } from "@ant-design/icons"
 
+import HeaderRightSpace from "./components/HeaderRightSpace"
 import MenuSider from "./components/Sider"
 import BreadcrumbNav from "./components/Breadcrumb"
 
@@ -34,7 +35,7 @@ export default function BaseLayout({ children }) {
               onClick={() => toggleCollapsed(true)}
             ></MenuFoldOutlined>
           )}
-          <div class="text-white">11111</div>
+          <HeaderRightSpace></HeaderRightSpace>
         </Header>
         <Content
           className="layout-background"
