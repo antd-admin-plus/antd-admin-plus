@@ -41,9 +41,7 @@ export default function BaseLayout({ children }) {
           className="layout-background"
         >
           <BreadcrumbNav />
-          <div style={{ backgroundColor: "#fff", padding: 24, minHeight: 380 }}>
-            {children}
-          </div>
+          {children}
         </Content>
         <Footer style={{ textAlign: "center" }}>
           Ant Design Admin Plus ©2022

@@ -1,7 +1,8 @@
 import Login from "@pages/login"
 import Dashboard from "@pages/dashboard"
 import Users from "@pages/users"
-import RequireAuth from "../pages/auth"
+import Charts from "@pages/charts"
+import RequireAuth from "@pages/auth"
 
 // exception pages
 import State403 from '@/pages/exceptions/state_403'
@@ -42,6 +43,7 @@ const routes = [
       },
       {
         path: "charts",
+        element: <Charts />,
       }
     ],
   },

@@ -35,13 +35,13 @@ export default function Sider() {
           <Link to="/users">Users</Link>
         </Menu.Item>
         <SubMenu key="/exceptions" icon={<AlertOutlined />} title="Exceptions">
-          <Menu.Item key="3">
+          <Menu.Item key="/exceptions/403">
             <Link to="/exceptions/403">403</Link>
           </Menu.Item>
-          <Menu.Item key="4">
+          <Menu.Item key="/exceptions/404">
             <Link to="/exceptions/404">404</Link>
           </Menu.Item>
-          <Menu.Item key="5">
+          <Menu.Item key="/exceptions/500">
             <Link to="/exceptions/500">500</Link>
           </Menu.Item>
         </SubMenu>
