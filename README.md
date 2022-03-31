@@ -119,3 +119,7 @@ Any type of contribution is welcome, here are some examples of how you may contr
 - Use Ant Admin Plus in your work.
 - Submit [issues](http://github.com/antd-admin-plus/antd-admin-plus/issues) to report bugs or ask questions.
 - Propose [pull requests](http://github.com/antd-admin-plus/antd-admin-plus/pulls) to improve our code.
+
+## Alternative
+- [antd-admin](https://github.com/zuiidea/antd-admin) 8.8k star
+- [Ant Design Pro](https://pro.ant.design/) 31.7k
