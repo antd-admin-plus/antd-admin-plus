@@ -9,6 +9,7 @@ import {
   TableOutlined,
   DashboardOutlined,
   LineChartOutlined,
+  TrademarkCircleOutlined
 } from "@ant-design/icons"
 
 const { SubMenu } = Menu
@@ -34,6 +35,12 @@ export default function Sider() {
           <Menu.Item key="/dashboard/analysis">
             <Link to="/dashboard/analysis">Analysis</Link>
           </Menu.Item>
+          <Menu.Item key="/dashboard/monitor">
+            <Link to="/dashboard/monitor">Monitor</Link>
+          </Menu.Item>
+          <Menu.Item key="/dashboard/workspace">
+            <Link to="/dashboard/workspace">Workspace</Link>
+          </Menu.Item>
         </SubMenu>
         <Menu.Item key="/form" icon={<FormOutlined />}>
           <Link to="/form">Form</Link>
@@ -44,6 +51,14 @@ export default function Sider() {
         <Menu.Item key="/users" icon={<UserOutlined />}>
           <Link to="/users">Users</Link>
         </Menu.Item>
+        <SubMenu key="/result" icon={<TrademarkCircleOutlined />} title="Result">
+          <Menu.Item key="/result/success">
+            <Link to="/result/success">Success</Link>
+          </Menu.Item>
+          <Menu.Item key="/result/fail">
+            <Link to="/result/fail">Fail</Link>
+          </Menu.Item>
+        </SubMenu>
         <SubMenu key="/exceptions" icon={<AlertOutlined />} title="Exceptions">
           <Menu.Item key="/exceptions/403">
             <Link to="/exceptions/403">403</Link>

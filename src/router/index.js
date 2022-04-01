@@ -5,9 +5,13 @@ import Charts from "@pages/charts"
 import List from "@pages/list"
 import Form from "@pages/form"
 import RequireAuth from "@pages/auth"
+import ResultSuccess from "@pages/result/Success"
+import ResultFail from "@pages/result/Fail"
 
 // dashboard pages
 import Analysis from '@pages/dashboard/Analysis'
+import Monitor from '@pages/dashboard/Monitor'
+import Workspace from '@pages/dashboard/Workspace'
 
 // exception pages
 import State403 from '@/pages/exceptions/state_403'
@@ -26,6 +30,16 @@ const routes = [
             index: true,
             path: 'analysis',
             element: <Analysis />
+          },
+          {
+            index: true,
+            path: 'monitor',
+            element: <Monitor />
+          },
+          {
+            index: true,
+            path: 'workspace',
+            element: <Workspace />
           }
         ]
       },
@@ -56,8 +70,18 @@ const routes = [
         element: <Users/>,
       },
       {
-        path: "users",
-        element: <Users/>,
+        path: "result",
+        children: [
+          {
+            index: true,
+            path: "success",
+            element: <ResultSuccess />,
+          },
+          {
+            path: "fail",
+            element: <ResultFail />,
+          },
+        ],
       },
       {
         path: "exceptions",
