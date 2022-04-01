@@ -10,6 +10,7 @@ import {
 import HeaderRightSpace from "./components/HeaderRightSpace"
 import MenuSider from "./components/Sider"
 import BreadcrumbNav from "./components/Breadcrumb"
+import NavCard from "./components/NavCard"
 
 const { Header, Sider, Content, Footer } = Layout
 
@@ -40,7 +41,7 @@ export default function BaseLayout({ children }) {
         <Content
           className="layout-background"
         >
-          <BreadcrumbNav />
+          <NavCard />
           {children}
         </Content>
         <Footer style={{ textAlign: "center" }}>

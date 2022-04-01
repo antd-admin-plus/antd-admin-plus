@@ -1,8 +1,13 @@
 import Login from "@pages/login"
-import Dashboard from "@pages/dashboard"
+// import Dashboard from "@pages/dashboard"
 import Users from "@pages/users"
 import Charts from "@pages/charts"
+import List from "@pages/list"
+import Form from "@pages/form"
 import RequireAuth from "@pages/auth"
+
+// dashboard pages
+import Analysis from '@pages/dashboard/Analysis'
 
 // exception pages
 import State403 from '@/pages/exceptions/state_403'
@@ -15,9 +20,40 @@ const routes = [
     element: <RequireAuth />,
     children: [
       {
-        index: true,
         path: "dashboard",
-        element: <Dashboard />,
+        children: [
+          {
+            index: true,
+            path: 'analysis',
+            element: <Analysis />
+          }
+        ]
+      },
+      {
+        path: "form",
+        element: <Form />,
+        // children: [
+        //   {
+        //     index: true,
+        //     path: 'basic-form',
+        //     element: <Form />
+        //   }
+        // ]
+      },
+      {
+        path: "list",
+        element: <List />,
+        // children: [
+        //   {
+        //     index: true,
+        //     path: 'basic-list',
+        //     element: <List />
+        //   }
+        // ]
+      },
+      {
+        path: "users",
+        element: <Users/>,
       },
       {
         path: "users",

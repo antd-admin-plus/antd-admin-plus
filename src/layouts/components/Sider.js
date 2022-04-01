@@ -5,6 +5,8 @@ import { Menu } from "antd"
 import {
   UserOutlined,
   AlertOutlined,
+  FormOutlined,
+  TableOutlined,
   DashboardOutlined,
   LineChartOutlined,
 } from "@ant-design/icons"
@@ -28,8 +30,16 @@ export default function Sider() {
         defaultSelectedKeys={[`${defaultSelectedKey}`]}
         selectedKeys={[`${defaultSelectedKey}`]}
       >
-        <Menu.Item key="/dashboard" icon={<DashboardOutlined />}>
-          <Link to="/dashboard">Dashboard</Link>
+        <SubMenu key="/dashboard" icon={<DashboardOutlined />} title="Dashboard">
+          <Menu.Item key="/dashboard/analysis">
+            <Link to="/dashboard/analysis">Analysis</Link>
+          </Menu.Item>
+        </SubMenu>
+        <Menu.Item key="/form" icon={<FormOutlined />}>
+          <Link to="/form">Form</Link>
+        </Menu.Item>
+        <Menu.Item key="/list" icon={<TableOutlined />}>
+          <Link to="/list">List</Link>
         </Menu.Item>
         <Menu.Item key="/users" icon={<UserOutlined />}>
           <Link to="/users">Users</Link>

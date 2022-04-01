@@ -2,7 +2,10 @@
 
 const breadcrumbNameMap = {
   "/dashboard": "Dashboard",
+  "/dashboard/analysis": "Analysis",
   "/users": "User",
+  "/form": "Form",
+  "/list": "List",
   "/exceptions": "Exceptions",
   "/exceptions/403": "403",
   "/exceptions/404": "404",
