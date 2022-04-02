@@ -1,6 +1,8 @@
 <h1 align="center">Antd Admin Plus</h1>
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/2594920/157815020-f6b07262-2c8a-4757-8f8f-778091911f82.png" widht="768" height="384" />
+  <a href="https://antd-admin-plus.github.io/antd-admin-plus/" target="_blank">
+    <img src="https://user-images.githubusercontent.com/2594920/157815020-f6b07262-2c8a-4757-8f8f-778091911f82.png" widht="768" height="384" />
+  </a>
 </div>
 
 <div align="center">
@@ -122,4 +124,8 @@ Any type of contribution is welcome, here are some examples of how you may contr
 
 ## Alternative
 - [antd-admin](https://github.com/zuiidea/antd-admin) 8.8k star
-- [Ant Design Pro](https://pro.ant.design/) 31.7k
+- [Ant Design Pro](https://pro.ant.design/) 31.7k star
+
+## Design
+
+- [design source](https://js.design/v?i=79JOl_&p=HKrPhlB7fk&f=92D80382-AC45-4132-9952-8F4A454F5772&mode=programmer)
