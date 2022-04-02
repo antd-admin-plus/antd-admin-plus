@@ -1,6 +1,8 @@
 import Login from "@pages/login"
 // import Dashboard from "@pages/dashboard"
-import Users from "@pages/users"
+// import Users from "@pages/users"
+import UsersCenter from "@pages/users/center"
+import UsersSetting from "@pages/users/setting"
 import Charts from "@pages/charts"
 import List from "@pages/list"
 import Form from "@pages/form"
@@ -67,7 +69,18 @@ const routes = [
       },
       {
         path: "users",
-        element: <Users/>,
+        children: [
+          {
+            index: true,
+            path: 'center',
+            element: <UsersCenter />
+          },
+          {
+            index: true,
+            path: 'setting',
+            element: <UsersSetting />
+          },
+        ]
       },
       {
         path: "result",

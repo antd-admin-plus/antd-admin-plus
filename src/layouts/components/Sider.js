@@ -48,9 +48,14 @@ export default function Sider() {
         <Menu.Item key="/list" icon={<TableOutlined />}>
           <Link to="/list">List</Link>
         </Menu.Item>
-        <Menu.Item key="/users" icon={<UserOutlined />}>
-          <Link to="/users">Users</Link>
-        </Menu.Item>
+        <SubMenu key="/users" icon={<UserOutlined />} title="User">
+          <Menu.Item key="/users/center">
+            <Link to="/users/center">User Center</Link>
+          </Menu.Item>
+          <Menu.Item key="/users/setting">
+            <Link to="/users/setting">User Setting</Link>
+          </Menu.Item>
+        </SubMenu>    
         <SubMenu key="/result" icon={<TrademarkCircleOutlined />} title="Result">
           <Menu.Item key="/result/success">
             <Link to="/result/success">Success</Link>
