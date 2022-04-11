@@ -44,10 +44,10 @@ export default function BaseLayout({ children }) {
           <NavCard />
           {children}
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Footer style={{ display: 'block',textAlign: "center" }}>
           Ant Design Admin Plus ©2022
         </Footer>
-      </Layout>
+      </Layout>      
     </Layout>
   )
 }

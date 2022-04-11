@@ -15,6 +15,9 @@ import Analysis from '@pages/dashboard/Analysis'
 import Monitor from '@pages/dashboard/Monitor'
 import Workspace from '@pages/dashboard/Workspace'
 
+// icon list
+import Icons from '@pages/icons'
+
 // exception pages
 import State403 from '@/pages/exceptions/state_403'
 import State404 from "@/pages/exceptions/state_404"
@@ -117,6 +120,10 @@ const routes = [
       {
         path: "charts",
         element: <Charts />,
+      },
+      {
+        path: "icons",
+        element: <Icons />,
       }
     ],
   },

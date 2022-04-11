@@ -9,7 +9,8 @@ import {
   TableOutlined,
   DashboardOutlined,
   LineChartOutlined,
-  TrademarkCircleOutlined
+  TrademarkCircleOutlined,
+  ReadOutlined
 } from "@ant-design/icons"
 
 const { SubMenu } = Menu
@@ -77,6 +78,9 @@ export default function Sider() {
         </SubMenu>
         <Menu.Item key="/charts" icon={<LineChartOutlined />}>
           <Link to="/charts">Charts</Link>
+        </Menu.Item>
+        <Menu.Item key="/icons" icon={<ReadOutlined />}>
+          <Link to="/icons">Icons</Link>
         </Menu.Item>
       </Menu>
     </>

@@ -16,6 +16,7 @@ const breadcrumbNameMap = {
   "/exceptions/404": "404",
   "/exceptions/500": "500",
   "/charts": "Charts",
+  "/icons": "Icons",
 }
 
 export {
