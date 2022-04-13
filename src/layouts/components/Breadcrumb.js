@@ -29,7 +29,7 @@ export default function BreadcrumbNav() {
 
   return (
     <Breadcrumb style={{ margin: "16px 0" }}>
-    {breadcrumbItems}
-  </Breadcrumb>
+      {breadcrumbItems}
+    </Breadcrumb>
   )
 }

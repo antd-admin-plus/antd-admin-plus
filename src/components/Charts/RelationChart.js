@@ -314,10 +314,14 @@ export default function RelationChart() {
 
   useEffect(() => {
     if (!graph.current) {
+      const container = document.getElementById("flow")
+      const width = container?.clientWidth
+      const height = container?.clientHeight || 380
+
       graph.current = new G6.Graph({
         container: ReactDOM.findDOMNode(ref.current),
-        width: 1200,
-        height: 380,
+        width,
+        height,
         modes: {
           default: ["drag-canvas"],
         },
@@ -341,6 +345,7 @@ export default function RelationChart() {
         defaultEdge: {
           type: "polyline",
         },
+        fitView: true,
         linkCenter: true,
         fitCenter: true,
       })
@@ -456,5 +461,5 @@ export default function RelationChart() {
     graph.fitView(30)
   }
 
-  return <div ref={ref} id="flow" className='w-full h-full'></div>
+  return <div ref={ref} id="flow" className="w-full h-full"></div>
 }
