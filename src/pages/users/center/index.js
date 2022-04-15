@@ -264,7 +264,7 @@ const Center = () => {
       <Col lg={7} md={24}>
         <Card bordered={false}>
           <div>
-            <div class="avatarHolder">
+            <div className="avatarHolder">
               <img alt="" src={currentUser.avatar} />
               <div className="name">{currentUser.name}</div>
               <div>{currentUser?.signature}</div>
