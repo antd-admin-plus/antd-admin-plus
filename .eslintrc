@@ -9,5 +9,5 @@
         "ecmaVersion": 7,
         "sourceType": "module"
     },
-    "extends": ["react-app"]
+    "extends": ["airbnb"]
 }
