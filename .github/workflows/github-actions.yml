@@ -35,7 +35,7 @@ jobs:
         run: yarn install
         
       - name: Install airbnb
-        run: yarn install eslint-config-airbnb
+        run: yarn add eslint-config-airbnb
 
       - name: Build
         run: yarn run build
