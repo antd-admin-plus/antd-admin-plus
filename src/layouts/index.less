@@ -2,6 +2,13 @@
   height: 100%;
   overflow: hidden;
 }
+
+.site-layout {
+  height: 100%;
+  width: 100%;
+  overflow: auto,
+}
+
 .layout-header {
   position: fixed;
   z-index: 1;
@@ -13,14 +20,13 @@
   padding: 0;
 }
 
+.layout-collapsed-header:extend(.layout-header) {
+  width: calc(100% - 80px);
+}
+
 .layout-background {
   margin: 14px 16px;
   padding: 14;
   padding-bottom: 0;
   margin-top: 84px;
-}
-.site-layout {
-  background-color: white;
-  height: 100%;
-  overflow: auto,
 }

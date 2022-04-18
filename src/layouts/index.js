@@ -26,7 +26,7 @@ export default function BaseLayout({ children }) {
         <MenuSider></MenuSider>
       </Sider>
       <Layout className="site-layout">
-        <Header className="layout-header">
+        <Header className={`${collapsed ? 'layout-collapsed-header' : 'layout-header'}`} >
           {collapsed ? (
             <MenuUnfoldOutlined
               onClick={() => toggleCollapsed(false)}
