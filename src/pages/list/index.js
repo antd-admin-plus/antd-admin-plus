@@ -34,8 +34,8 @@ const columns = [
     sorter: true,
     render: () => (
       <Space size="middle">
-        <a>Delete</a>
-        <a className="ant-dropdown-link">
+        <a href="#">Delete</a>
+        <a className="ant-dropdown-link" href="#">
           More actions <DownOutlined />
         </a>
       </Space>
