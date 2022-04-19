@@ -1,6 +1,7 @@
 /scripts
 /config
 .history
+node_modules/
 public
 dist
 mock
