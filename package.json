@@ -29,7 +29,8 @@
     "test": "craco test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "analyzer": "NODE_ENV=production BUILD_ANALYZER=true npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -63,6 +64,7 @@
     "craco-less": "^2.0.0",
     "eslint": "^8.13.0",
     "eslint-config-react-app": "^7.0.1",
-    "gh-pages": "^3.2.3"
+    "gh-pages": "^3.2.3",
+    "webpack-bundle-analyzer": "^4.5.0"
   }
 }

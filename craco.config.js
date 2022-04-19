@@ -1,5 +1,8 @@
-const CracoLessPlugin = require("craco-less")
 const path = require("path")
+const { whenProd } = require("@craco/craco")
+const CracoLessPlugin = require("craco-less")
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer")
+// const HardSourceWebpackPlugin = require("hard-source-webpack-plugin")
 
 module.exports = {
   plugins: [
@@ -34,5 +37,20 @@ module.exports = {
       "@components": path.resolve(__dirname, "src/components"),
       "@pages": path.resolve(__dirname, "src/pages"),
     },
+    plugins: [
+      // new HardSourceWebpackPlugin(),
+      ...whenProd(
+        () => [
+          new BundleAnalyzerPlugin({
+            analyzerMode: "server",
+            analyzerHost: "127.0.0.1",
+            analyzerPort: 8888,
+            openAnalyzer: true, // 构建完打开浏览器
+            reportFilename: path.resolve(__dirname, `analyzer/index.html`),
+          }),
+        ],
+        []
+      ),
+    ],
   },
 }
